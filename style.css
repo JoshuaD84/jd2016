@@ -23,6 +23,7 @@ body {
    font-size: 100%; //apparently doing this here and using em everywhere else gets the best behavior
    border: 5px solid orange;
    background-color: #D9D9D9;
+   word-wrap: break-word;
 }
 
 #header-wrapper {
