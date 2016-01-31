@@ -44,8 +44,13 @@ function jd2016_customize_register( $wp_customize ) {
 	$wp_customize->add_control('jd2016_social_stack_exchange', array('section' => 'jd2016_social', 'label' => 'Stack Exchange', 'type' => 'text'));
 	$wp_customize->add_setting('jd2016_social_website', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
 	$wp_customize->add_control('jd2016_social_website', array('section' => 'jd2016_social', 'label' => 'Website', 'type' => 'text'));
+	$wp_customize->add_setting('jd2016_social_lol', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
+	$wp_customize->add_control('jd2016_social_lol', array('section' => 'jd2016_social', 'label' => 'League of Legends', 'type' => 'text'));
 	$wp_customize->add_setting('jd2016_social_quora', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
 	$wp_customize->add_control('jd2016_social_quora', array('section' => 'jd2016_social', 'label' => 'Quora', 'type' => 'text'));
+   
+   $wp_customize->add_setting('jd2016_social_dnd', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
+	$wp_customize->add_control('jd2016_social_dnd', array('section' => 'jd2016_social', 'label' => 'Dungeons & Dragons', 'type' => 'text'));
 }
 add_action( 'customize_register', 'jd2016_customize_register' );
 

@@ -47,9 +47,10 @@ body {
    margin-top: 10px;
    font-size: 3.2em;
    line-height: 1.1em;
+   margin-bottom: 20px;
 }
 
-#blog-name-link {
+.blog-name-link {
    text-decoration: none;
    color: inherit;
 }
@@ -81,7 +82,7 @@ body {
 
 .constrained-to-mid {
    width: 85%;
-   min-width: 500px;
+   min-width: 680px;
    max-width: 1100px;
    margin-left: auto;
    margin-right: auto;
@@ -319,9 +320,36 @@ img {
    margin: auto;
 }
 
+/* comments */
+
+.vcard {
+  display: flex;
+  align-items: center;
+}
+
+.vcard .fn {
+   margin-left: 10px;
+   margin-right: 5px;
+   font-style: normal;
+}
+
+.avatar  {
+   border-radius: 30px;
+   border: 2px solid black;
+}
+
+.comment-meta {
+   font-style: oblique;
+   margin-left: 42px;
+   font-size: .9em;
+}
+
+.bypostauthor {
+   background-color: #d4eef6;
+}
+
 
 /* Forms: buttons. */
-
 #submit {
    margin-top: 15px;
 }
@@ -354,6 +382,8 @@ input[type="submit"],
    text-align: center;
    vertical-align: middle;
    white-space: nowrap;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 button[type="submit"]:focus,
@@ -482,7 +512,7 @@ input[type="submit"],
 
 .social-icons a {
    font-size: 1.6em;
-   padding: 20px 10px 20px 10px;
+   padding: 0px 10px 0px 10px;
    display: inline-block;
    text-decoration: none;
    font-family: icons;
@@ -496,6 +526,8 @@ input[type="submit"],
 .icon-stack-overflow:before
 .icon-stack-exchange:before
 .icon-soundcloud:before 
+.icon-league-of-legends:before 
+.icon-dnd:before 
 .icon-quora:before {
    font:normal normal 14px/1 icons;
    font-size: inherit;
@@ -512,9 +544,12 @@ input[type="submit"],
 .icon-google-plus:before { content: '\f0d5' }
 .icon-stack-overflow:before { content: '\f16c' }
 .icon-soundcloud:before { content: '\f1be'}
-.icon-stack-exchange:before { content: '\f18d'} //f18d
+.icon-stack-exchange:before { content: '\f18d'} 
+.icon-league-of-legends:before { content: '\f11b'}
 .icon-quora:before { content: 'Q'}
-.icon-quora {font-weight: bold}
+.icon-dnd:before  { content: '&' }
+.icon-dnd { width: 14px !important; height: 14px !important }
+.icon-quora, .icon-dnd {font-weight: bold}
 
 /* =WordPress Core
 -------------------------------------------------------------- */
