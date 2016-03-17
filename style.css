@@ -33,7 +33,7 @@ body {
 }
 
 #page-header {
-   overflow: auto; //make image clear
+   overflow: auto; /*make image clear*/
 }
 
 #page-header a {
@@ -120,8 +120,18 @@ body {
    box-sizing: border-box;
    padding: 30px 60px;
    z-index: 1;
+	overflow: auto;
 }
 
+#content li > ul {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+
+#page-title {
+	text-align: center;
+}
 
 .post-summary {
    padding: 30px 20px 30px 15px;
@@ -657,4 +667,129 @@ a img.aligncenter {
    top: 5px;
    width: auto;
    z-index: 100000; /* Above WP toolbar. */
+}
+
+#nav-anchor-menu {
+   float: left;
+   max-width: 230px;
+   margin-left: -20px;
+   border-radius: 10px;
+   padding: 0px;
+   background-color: #c7d0d5;
+   margin-top: 0px;
+   padding-top: 0px;
+	margin-right: 40px;
+   border: 2px solid #222222;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+#menu-header {
+   text-align: center;
+   font-size: 32px;
+   margin-top: 0px;
+   padding-top: 10px;
+	color: #1c3d54;
+	padding-bottom: 10px;
+}
+
+#nav-anchor-menu > ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+#nav-anchor-menu > ul > li > ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#nav-anchor-menu ul > li > ul > li > a {
+    padding-left: 25px;
+}
+#nav-anchor-menu li {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+}
+#nav-anchor-menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+#nav-anchor-menu a:hover {
+    background-color: #FF7148;
+}
+
+
+.decklist-post h1 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	line-height: .8em;
+}
+
+.decklist-post h2 {
+	text-align: center;
+	font-size: 1.6em;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.decklist-post h4 {
+	font-size: 1.2em;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+
+.decklist-box {
+	float: left;
+	width: 46%;
+	padding: 0px;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.decklist-box header {
+	background: #EEEEEE;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.decklist-box table {
+	width: 100%;
+}
+
+.decklist-box td:first-child {
+	width: 15%;
+}
+
+.decklist-box td, .decklist-box tr {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.decklist-box a {
+	display: block;
+	padding: 2px 0px 2px 0px; 
+	margin: 0px;
+	color: black;
+}
+
+.decklist-box tr:hover {
+	background-color: #F5F5F5;
+}
+
+.decklist-box tr:hover a {
+	text-decoration: none;
+	color: black;
 }

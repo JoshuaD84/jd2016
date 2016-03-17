@@ -34,7 +34,7 @@
    ?>
    <?php 
       $page_keywords = get_post_meta ( get_the_ID(), "page_keywords", true );
-      
+      $page_keywords = "joshua hartwell, josh hartwell, JoshuaD, " . $page_keywords; 
       if ( !empty ( $page_keywords ) ) {
          echo  '<meta name="keywords" content="' . $page_keywords . '" />';
       }
