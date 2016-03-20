@@ -95,14 +95,34 @@ body {
    border-radius: 0px 0px 15px 15px;
    padding: 0px 25px;
    box-shadow: 0px 2px 2px #888888;
-   position: relative; //Makes drop shadow appear on top
+   position: relative; /*Makes drop shadow appear on top*/
 }
 
-#mainMenu li {
-   display: table-cell;
+#mainMenu ul { position: relative; list-style-type: none; display: inline-block; }
+#mainMenu ul ul { 
+	position: absolute; 
+	display: none; 
+	top: 100%; 
+	margin-left: -0.5px; 
+	z-index: 999; 
+	background-color: #D7D7D7; 
+	font-size: 90%;
+   box-shadow: 2px 2px 1px #888888;
+}
+   
+#mainMenu ul li a:hover {
+   background-color: #EEEEEE;
 }
 
-#mainMenu li a {
+#mainMenu ul ul ul { left: 100%; top: -0.5px; } 
+#mainMenu ul li:hover > ul { display: inline-block; }
+#mainMenu ul ul li { position: relative; min-width: 160px;}
+#mainMenu a { text-decoration: none; display: block; white-space: nowrap; }
+#mainMenu ul ul a { margin: 0px; }
+#mainMenu > ul { display: table; }
+#mainMenu > ul > li { display: table-cell; margin: 0px; }
+
+#mainMenu ul > li > a {
    display: block;
    padding: 10px;
    font-weight: bold;
@@ -208,7 +228,7 @@ h2 {
    margin-top: 2em;
 }
 
-li {
+#content li {
    margin-left: 25px;
    margin-top: .3em;
 }
@@ -792,4 +812,8 @@ a img.aligncenter {
 .decklist-box tr:hover a {
 	text-decoration: none;
 	color: black;
+}
+
+#attachment_295 .wp-caption-text { /*Flatnose caption*/
+   font-size: 100%;
 }
