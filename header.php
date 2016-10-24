@@ -110,14 +110,19 @@
                   <span class="hidden"><?php _e( 'League of Legends', 'jd2016' ); ?></span>
                </a>
             <?php } ?>
-            <?php if ( false != get_theme_mod( 'jd2016_social_quora')) { ?>
+            <?php if ( false != get_theme_mod( 'jd2016_social_quora')) : ?>
                <a class="icon-quora" title="Quora" target="_blank" href="<?php echo esc_url( get_theme_mod( 'jd2016_social_quora') ); ?>">
                   <span class="hidden"><?php _e( 'Quora', 'jd2016' ); ?></span>
                </a>
-            <?php } ?>
+            <?php endif ?>
             <?php if ( false != get_theme_mod( 'jd2016_social_dnd')) : ?>
                <a class="icon-dnd" title="D&D Character - Breeze the Bard" target="_blank" href="<?php echo esc_url( get_theme_mod( 'jd2016_social_dnd') ); ?>">
                   <span class="hidden"><?php _e( 'D&D', 'jd2016' ); ?></span>
+               </a>
+            <?php endif ?>
+            <?php if ( false != get_theme_mod( 'jd2016_social_public_key')) : ?>
+               <a class="icon-public-key" title="My Public Key" href="<?php echo esc_url( get_theme_mod( 'jd2016_social_public_key') ); ?>">
+                  <span class="hidden"><?php _e( 'My Public Key', 'jd2016' ); ?></span>
                </a>
             <?php endif ?>
          </div>

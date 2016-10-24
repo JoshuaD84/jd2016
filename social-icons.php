@@ -50,6 +50,8 @@ function jd2016_customize_register( $wp_customize ) {
 	$wp_customize->add_control('jd2016_social_quora', array('section' => 'jd2016_social', 'label' => 'Quora', 'type' => 'text'));
    $wp_customize->add_setting('jd2016_social_dnd', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
 	$wp_customize->add_control('jd2016_social_dnd', array('section' => 'jd2016_social', 'label' => 'Dungeons & Dragons', 'type' => 'text'));
+   $wp_customize->add_setting('jd2016_social_public_key', array('transport' => 'refresh', 'sanitize_callback' => 'jd2016_sanitize_uri'));
+	$wp_customize->add_control('jd2016_social_public_key', array('section' => 'jd2016_social', 'label' => 'Public Key', 'type' => 'text'));
 }
 add_action( 'customize_register', 'jd2016_customize_register' );
 
