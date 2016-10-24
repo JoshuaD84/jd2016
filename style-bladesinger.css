@@ -1,0 +1,45 @@
+#bladesinger-class-table {
+   border-collapse: collapse;
+   width: 90%;
+   margin: 20px auto;
+}
+
+#bladesinger-class-table td,
+#bladesinger-class-table th {
+   padding: 3px 5px;
+   border: 1px solid black;
+   text-align: center;
+}
+
+#bladesinger-class-table td:last-child {
+   text-align: left;
+}
+
+#bladesinger-class-table th {
+   background-color: #A7A7D5;
+}
+
+#bladesinger-class-table tr:nth-child(odd) {
+   background-color: #E9E9FF;
+}
+
+#bladesinger-spell-table {
+   border-collapse: collapse;
+   width: 40%;
+   margin: 20px auto;
+}
+
+#bladesinger-spell-table td,
+#bladesinger-spell-table th {
+   padding: 3px 5px;
+   border: 1px solid black;
+   text-align: center;
+}
+
+#bladesinger-spell-table th {
+   background-color: #A7A7D5;
+}
+
+#bladesinger-spell-table tr:nth-child(odd) {
+   background-color: #E9E9FF;
+}

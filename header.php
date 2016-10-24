@@ -64,10 +64,8 @@
                <?php bloginfo('name'); ?>
             </a>
          </h1>
-         <?php 
-            $tagline = get_bloginfo( 'description' );
-            if ( ! empty ( $tagline ) ): 
-         ?> 
+         <?php $tagline = get_bloginfo( 'description' ); ?>
+         <?php if ( ! empty ( $tagline ) ): ?> 
                <h2 id="blog-tagline"><?php echo $tagline ?></h2>
          <?php endif ?>
          
